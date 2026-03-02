@@ -118,7 +118,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 200
+          "ioValue": 250
         }
       ]
     },
@@ -187,9 +187,11 @@
       "x": 0.061892130857648095,
       "y": 0.4659340659340659,
       "uniqueID": "id-116",
-      "fileName": null,
+      "fileName": "TurtleClamp1_1.stl",
       "name": "Import",
-      "type": null,
+      "type": "STL",
+      "repoOwner": "IDAbbott",
+      "repoName": "Modified_Turtle_Clamp",
       "SVGwidth": 10
     }
   ],
@@ -233,6 +235,16 @@
       "ap2Name": "geometry",
       "ap1ID": "id-47",
       "ap2ID": "id-43"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-112",
+      "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-116",
+      "ap2ID": "id-112"
     }
   ],
   "unitsKey": "MM",
