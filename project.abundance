@@ -184,8 +184,8 @@
     },
     {
       "atomType": "Import",
-      "x": 0.061892130857648095,
-      "y": 0.4659340659340659,
+      "x": 0.07603890362511052,
+      "y": 0.443956043956044,
       "uniqueID": "id-116",
       "fileName": "TurtleClamp1_1.stl",
       "name": "Import",
@@ -193,9 +193,60 @@
       "repoOwner": "IDAbbott",
       "repoName": "Modified_Turtle_Clamp",
       "SVGwidth": 10
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.5464190981432361,
+      "y": 0.5538461538461539,
+      "uniqueID": "id-118",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Export",
+      "x": 0.6702033598585323,
+      "y": 0.7714285714285715,
+      "uniqueID": "id-123",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Modified_Turtle_Clamp",
+          "currentEquation": "Modified_Turtle_Clamp"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Modified_Turtle_Clamp"
     }
   ],
   "allConnectors": [
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-8",
+      "ap2ID": "id-118"
+    },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-12",
@@ -210,6 +261,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-19",
       "ap2ID": "id-31"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-19",
+      "ap2ID": "id-112"
     },
     {
       "ap2Name": "geometry1",
@@ -237,14 +293,24 @@
       "ap2ID": "id-43"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "Shape 1",
       "ap1ID": "id-112",
+      "ap2ID": "id-118"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-116",
+      "ap2ID": "id-19"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-118",
       "ap2ID": "id-2"
     },
     {
-      "ap2Name": "geometry1",
-      "ap1ID": "id-116",
-      "ap2ID": "id-112"
+      "ap2Name": "geometry",
+      "ap1ID": "id-118",
+      "ap2ID": "id-123"
     }
   ],
   "unitsKey": "MM",
