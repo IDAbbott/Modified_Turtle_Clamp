@@ -20,16 +20,114 @@
     },
     {
       "atomType": "Import",
-      "x": 0.2502210433244916,
-      "y": 0.4593406593406593,
+      "x": 0.11405835543766579,
+      "y": 0.46813186813186813,
       "uniqueID": "id-6",
       "fileName": "TurtleClamp1_1.stl",
       "name": "Import",
       "type": "STL",
+      "repoOwner": "IDAbbott",
+      "repoName": "Modified_Turtle_Clamp",
       "SVGwidth": 10
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.4367816091954023,
+      "y": 0.26593406593406593,
+      "uniqueID": "id-8",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.09283819628647214,
+      "y": 0.20219780219780217,
+      "uniqueID": "id-12",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.19283819628647214,
+      "y": 0.20219780219780217,
+      "uniqueID": "id-15",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.2140583554376658,
+      "y": 0.46813186813186813,
+      "uniqueID": "id-19",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -10
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        }
+      ]
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-6",
+      "ap2ID": "id-19"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-8",
+      "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12",
+      "ap2ID": "id-15"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-15",
+      "ap2ID": "id-8"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-19",
+      "ap2ID": "id-8"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
