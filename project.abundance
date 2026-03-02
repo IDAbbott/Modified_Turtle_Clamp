@@ -20,8 +20,8 @@
     },
     {
       "atomType": "Import",
-      "x": 0.11405835543766579,
-      "y": 0.46813186813186813,
+      "x": 0.07957559681697612,
+      "y": 0.5230769230769231,
       "uniqueID": "id-6",
       "fileName": "TurtleClamp1_1.stl",
       "name": "Import",
@@ -32,8 +32,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.4367816091954023,
-      "y": 0.26593406593406593,
+      "x": 0.43943412908930146,
+      "y": 0.843956043956044,
       "uniqueID": "id-8",
       "ioValues": [
         {
@@ -48,8 +48,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.09283819628647214,
-      "y": 0.2065934065934066,
+      "x": 0.05393457117595049,
+      "y": 0.9120879120879121,
       "uniqueID": "id-12",
       "ioValues": [
         {
@@ -60,8 +60,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.19283819628647214,
-      "y": 0.20219780219780217,
+      "x": 0.1794871794871795,
+      "y": 0.9296703296703296,
       "uniqueID": "id-15",
       "ioValues": [
         {
@@ -76,8 +76,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.21750663129973474,
-      "y": 0.4483516483516483,
+      "x": 0.21485411140583555,
+      "y": 0.5384615384615384,
       "uniqueID": "id-19",
       "ioValues": [
         {
@@ -94,15 +94,14 @@
         },
         {
           "name": "zDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         }
       ]
     },
     {
       "atomType": "Rotate",
-      "x": 0.3175066312997348,
-      "y": 0.4483516483516483,
+      "x": 0.3147656940760389,
+      "y": 0.5648351648351648,
       "uniqueID": "id-31",
       "ioValues": [
         {
@@ -115,12 +114,67 @@
         },
         {
           "name": "y-axis degrees",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "z-axis degrees",
           "ioValue": -10
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.04597701149425287,
+      "y": 0.15604395604395604,
+      "uniqueID": "id-37",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 200
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.04597701149425287,
+      "y": 0.3142857142857143,
+      "uniqueID": "id-40",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 125
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.29619805481874445,
+      "y": 0.26593406593406593,
+      "uniqueID": "id-43",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 20
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.1724137931034483,
+      "y": 0.24835164835164836,
+      "uniqueID": "id-47",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
     }
@@ -155,6 +209,21 @@
       "ap2Name": "geometry1",
       "ap1ID": "id-31",
       "ap2ID": "id-8"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-37",
+      "ap2ID": "id-47"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-40",
+      "ap2ID": "id-47"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-47",
+      "ap2ID": "id-43"
     }
   ],
   "unitsKey": "MM",
