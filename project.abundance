@@ -19,18 +19,6 @@
       ]
     },
     {
-      "atomType": "Import",
-      "x": 0.07957559681697612,
-      "y": 0.5230769230769231,
-      "uniqueID": "id-6",
-      "fileName": "TurtleClamp1_1.stl",
-      "name": "Import",
-      "type": "STL",
-      "repoOwner": "IDAbbott",
-      "repoName": "Modified_Turtle_Clamp",
-      "SVGwidth": 10
-    },
-    {
       "atomType": "Difference",
       "x": 0.43943412908930146,
       "y": 0.843956043956044,
@@ -76,8 +64,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.21485411140583555,
-      "y": 0.5230769230769231,
+      "x": 0.1918656056587091,
+      "y": 0.6065934065934065,
       "uniqueID": "id-19",
       "ioValues": [
         {
@@ -100,8 +88,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.3147656940760389,
-      "y": 0.5648351648351648,
+      "x": 0.27586206896551724,
+      "y": 0.7230769230769231,
       "uniqueID": "id-31",
       "ioValues": [
         {
@@ -148,8 +136,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.29619805481874445,
-      "y": 0.26593406593406593,
+      "x": 0.34924845269672855,
+      "y": 0.11648351648351647,
       "uniqueID": "id-43",
       "ioValues": [
         {
@@ -177,19 +165,35 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.41644562334217505,
+      "y": 0.3208791208791209,
+      "uniqueID": "id-112",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Import",
+      "x": 0.061892130857648095,
+      "y": 0.4659340659340659,
+      "uniqueID": "id-116",
+      "fileName": null,
+      "name": "Import",
+      "type": null,
+      "SVGwidth": 10
     }
   ],
   "allConnectors": [
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-6",
-      "ap2ID": "id-19"
-    },
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-8",
-      "ap2ID": "id-2"
-    },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-12",
@@ -219,6 +223,11 @@
       "ap2Name": "geometry2",
       "ap1ID": "id-40",
       "ap2ID": "id-47"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-43",
+      "ap2ID": "id-112"
     },
     {
       "ap2Name": "geometry",
