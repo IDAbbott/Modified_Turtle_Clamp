@@ -295,22 +295,6 @@
           "ioValue": 10
         }
       ]
-    },
-    {
-      "atomType": "Difference",
-      "x": 0.6710875331564986,
-      "y": 0.6813186813186813,
-      "uniqueID": "id-186",
-      "ioValues": [
-        {
-          "name": "geometry1",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "geometry2",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ]
     }
   ],
   "allConnectors": [
@@ -375,9 +359,14 @@
       "ap2ID": "id-19"
     },
     {
-      "ap2Name": "geometry1",
+      "ap2Name": "geometry",
       "ap1ID": "id-118",
-      "ap2ID": "id-186"
+      "ap2ID": "id-123"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-118",
+      "ap2ID": "id-2"
     },
     {
       "ap2Name": "geometry",
@@ -388,21 +377,6 @@
       "ap2Name": "geometry",
       "ap1ID": "id-171",
       "ap2ID": "id-175"
-    },
-    {
-      "ap2Name": "geometry2",
-      "ap1ID": "id-175",
-      "ap2ID": "id-186"
-    },
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-186",
-      "ap2ID": "id-2"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-186",
-      "ap2ID": "id-123"
     }
   ],
   "unitsKey": "MM",
