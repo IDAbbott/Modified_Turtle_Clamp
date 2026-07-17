@@ -380,14 +380,14 @@
       "ap2ID": "id-123"
     },
     {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-118",
-      "ap2ID": "id-2"
-    },
-    {
       "ap2Name": "retain",
       "ap1ID": "id-118",
       "ap2ID": "id-230"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-118",
+      "ap2ID": "id-2"
     },
     {
       "ap2Name": "geometry",
