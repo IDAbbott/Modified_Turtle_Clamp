@@ -212,8 +212,8 @@
     },
     {
       "atomType": "Export",
-      "x": 0.793103448275862,
-      "y": 0.2571428571428572,
+      "x": 0.9103313840155944,
+      "y": 0.6705882352941177,
       "uniqueID": "id-123",
       "ioValues": [
         {
@@ -222,8 +222,8 @@
         },
         {
           "name": "File Type",
-          "ioValue": "STL",
-          "currentEquation": "STL"
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
         },
         {
           "name": "Resolution (dpi)",
@@ -231,14 +231,14 @@
         },
         {
           "name": "Part Name",
-          "ioValue": "Modified_Turtle_Clamp",
-          "currentEquation": "Modified_Turtle_Clamp"
+          "ioValue": "Modified_Turtle_Clamp2",
+          "currentEquation": "Modified_Turtle_Clamp2"
         }
       ],
-      "type": "STL",
+      "type": "STEP",
       "resolution": 96,
       "importIndex": 0,
-      "partName": "Modified_Turtle_Clamp"
+      "partName": "Modified_Turtle_Clamp2"
     },
     {
       "atomType": "Rectangle",
@@ -422,6 +422,94 @@
         }
       ],
       "unionType": "Fusion"
+    },
+    {
+      "atomType": "Fusion",
+      "x": 0.6072124756335283,
+      "y": 0.6164705882352941,
+      "uniqueID": "id-359",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "cut-move-import-stl-140c2cb462a56d362680cae1641f057ba5da6ae25b86b9acfb280665450cd1a4--9.5-0.5-0-fuse-extrude-cut-circle-125-circle-62-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-move-extrude-rectangle-250-250-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-12-0-0-9.5",
+            "tags": [],
+            "color": "#aad7f2",
+            "bom": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "dimension": "3D"
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "cut-rotate-move-import-stl-140c2cb462a56d362680cae1641f057ba5da6ae25b86b9acfb280665450cd1a4--9.5-0.5-0-0-0--20-fuse-extrude-circle-62.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-move-extrude-rectangle-250-250-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-12-0-0-9.5",
+            "tags": [],
+            "color": "#aad7f2",
+            "bom": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "dimension": "3D"
+          }
+        }
+      ],
+      "unionType": "Fusion"
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.7495126705653021,
+      "y": 0.6517647058823529,
+      "uniqueID": "id-364",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 180
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -429,6 +517,11 @@
       "ap2Name": "Shape 2",
       "ap1ID": "id-8",
       "ap2ID": "id-118"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-8",
+      "ap2ID": "id-359"
     },
     {
       "ap2Name": "geometry",
@@ -481,14 +574,14 @@
       "ap2ID": "id-118"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-116",
-      "ap2ID": "id-19"
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-112",
+      "ap2ID": "id-359"
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-118",
-      "ap2ID": "id-123"
+      "ap1ID": "id-116",
+      "ap2ID": "id-19"
     },
     {
       "ap2Name": "number or geometry",
@@ -524,6 +617,16 @@
       "ap2Name": "remove",
       "ap1ID": "id-354",
       "ap2ID": "id-8"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-359",
+      "ap2ID": "id-364"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-364",
+      "ap2ID": "id-123"
     }
   ],
   "unitsKey": "MM",
