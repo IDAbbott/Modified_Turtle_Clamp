@@ -98,8 +98,7 @@
         },
         {
           "name": "x-axis degrees",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "y-axis degrees",
@@ -169,8 +168,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.537577365163572,
-      "y": 0.3032967032967033,
+      "x": 0.3996101364522417,
+      "y": 0.2823529411764706,
       "uniqueID": "id-112",
       "ioValues": [
         {
@@ -197,8 +196,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.5464190981432361,
-      "y": 0.5538461538461539,
+      "x": 0.5682261208576997,
+      "y": 0.40941176470588236,
       "uniqueID": "id-118",
       "ioValues": [
         {
@@ -293,7 +292,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": 10
+          "ioValue": 15
         }
       ]
     },
