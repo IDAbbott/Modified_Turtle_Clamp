@@ -25,11 +25,11 @@
       "uniqueID": "id-8",
       "ioValues": [
         {
-          "name": "geometry1",
+          "name": "retain",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "geometry2",
+          "name": "remove",
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
@@ -98,7 +98,8 @@
         },
         {
           "name": "x-axis degrees",
-          "ioValue": 0
+          "ioValue": 0,
+          "currentEquation": "0"
         },
         {
           "name": "y-axis degrees",
@@ -106,7 +107,7 @@
         },
         {
           "name": "z-axis degrees",
-          "ioValue": -10
+          "ioValue": -20
         }
       ]
     },
@@ -157,11 +158,11 @@
       "uniqueID": "id-47",
       "ioValues": [
         {
-          "name": "geometry1",
+          "name": "retain",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "geometry2",
+          "name": "remove",
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
@@ -173,11 +174,11 @@
       "uniqueID": "id-112",
       "ioValues": [
         {
-          "name": "geometry1",
+          "name": "retain",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "geometry2",
+          "name": "remove",
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
@@ -295,6 +296,22 @@
           "ioValue": 10
         }
       ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.6754385964912281,
+      "y": 0.7270588235294118,
+      "uniqueID": "id-230",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -309,7 +326,7 @@
       "ap2ID": "id-15"
     },
     {
-      "ap2Name": "geometry2",
+      "ap2Name": "remove",
       "ap1ID": "id-15",
       "ap2ID": "id-8"
     },
@@ -319,27 +336,27 @@
       "ap2ID": "id-31"
     },
     {
-      "ap2Name": "geometry1",
+      "ap2Name": "retain",
       "ap1ID": "id-19",
       "ap2ID": "id-112"
     },
     {
-      "ap2Name": "geometry1",
+      "ap2Name": "retain",
       "ap1ID": "id-31",
       "ap2ID": "id-8"
     },
     {
-      "ap2Name": "geometry1",
+      "ap2Name": "retain",
       "ap1ID": "id-37",
       "ap2ID": "id-47"
     },
     {
-      "ap2Name": "geometry2",
+      "ap2Name": "remove",
       "ap1ID": "id-40",
       "ap2ID": "id-47"
     },
     {
-      "ap2Name": "geometry2",
+      "ap2Name": "remove",
       "ap1ID": "id-43",
       "ap2ID": "id-112"
     },
@@ -369,6 +386,11 @@
       "ap2ID": "id-2"
     },
     {
+      "ap2Name": "retain",
+      "ap1ID": "id-118",
+      "ap2ID": "id-230"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-167",
       "ap2ID": "id-171"
@@ -377,6 +399,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-171",
       "ap2ID": "id-175"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-175",
+      "ap2ID": "id-230"
     }
   ],
   "unitsKey": "MM",
